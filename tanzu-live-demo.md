@@ -9,10 +9,10 @@
 
 ## Deploy:
 
-Create workload and prevent the servcie from scaling down
+Create workload
 
 ```
-tanzu apps workload create tanzu-live -f ./tap-initialize/config/workload.yaml --live-update --tail
+tanzu apps workload create tanzu-live -f ./tap-initialize/config/workload.yaml --tail
 ```
 
 Check workload status:

@@ -6,6 +6,11 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: tanzu-live
 spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
+      autoscaling.knative.dev/maxScale: "1"
   source:
     git:
       url: https://github.com/gothinkster/spring-boot-realworld-example-app
